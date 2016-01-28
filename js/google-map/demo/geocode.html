@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Geocoding service</title>
+    <style>
+      html, body, #map-canvas {
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+      }
+      #panel {
+        position: absolute;
+        top: 5px;
+        left: 50%;
+        margin-left: -180px;
+        z-index: 5;
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid #999;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script>
+		var geocoder;
+		var map;
+		
+		var cust_info = { c_fname: "Donghyuk", 
+					c_lname: "Jang",
+					c_phone: "647-466-3365",
+					c_email: "donghyuk0117@gmail.com",
+					moving_date: "Feburary 25th",
+					moving_time: "9:20 a.m.",
+					pick_up: {
+						type: "1Bedroom Condo",
+						address: "1 Yonge St",
+						unit: "2030",
+						city: "Toronto",
+						desc: "2 TV, 1 Queen bed, 1 Big Desk, 1 Storage."
+					},
+					drop_off: {
+						type: "TownHouse",
+						address: "124 Broadway ave",
+						unit : "",
+						city: "Toronto",
+						desc: "No elevator, Narrow parking lot."
+					}
+				  };
+		function handleApiReady() { 
+			  var myLatlng = new google.maps.LatLng(-34.397, 150.644); 
+			  var myOptions = { 
+				zoom: 8, 
+				center: myLatlng, 
+				mapTypeId: google.maps.MapTypeId.ROADMAP 
+			  } 
+			  var map1 = new google.maps.Map(document.getElementById("map_canvas1"), myOptions); 
+			  var map2 = new google.maps.Map(document.getElementById("map_canvas2"), myOptions); 
+			} 
+		function initialize() {
+		  geocoder = new google.maps.Geocoder();
+		  var latlng = new google.maps.LatLng(43.64515,-79.409545);
+		  var mapOptions = {
+			zoom: 12,
+			center: latlng
+		  }
+		  map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+		}
+
+		function codeAddress() {
+		  var point = document.getElementById('address').value;
+		  var point1 = document.getElementById('address').value;
+		  point = cust_info.pick_up.address + ', ' + cust_info.pick_up.city;
+		  geocoder.geocode( { 'address': point}, function(results, status) {
+			if (status == google.maps.GeocoderStatus.OK) {
+			  map.setCenter(results[0].geometry.location);
+			  var marker = new google.maps.Marker({
+				  map: map,
+				  position: results[0].geometry.location
+			  });
+			} else {
+			  alert('Geocode was not successful for the following reason: ' + status);
+			}
+		  });
+		  point1 = cust_info.drop_off.address + ', ' + cust_info.drop_off.city;
+		  geocoder.geocode( { 'address': point1}, function(results, status) {
+			if (status == google.maps.GeocoderStatus.OK) {
+			  map.setCenter(results[0].geometry.location);
+			  var marker = new google.maps.Marker({
+				  map: map,
+				  position: results[0].geometry.location
+			  });
+			} else {
+			  alert('Geocode was not successful for the following reason: ' + status);
+			}
+		  });
+		}
+
+		google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </head>
+  <body>
+    <div id="panel">
+      <input id="address" type="textbox" value="">
+      <input type="button" value="Geocode" onclick="codeAddress()">
+    </div>
+    <div id="map-canvas"></div>
+	
+  </body>
+</html>

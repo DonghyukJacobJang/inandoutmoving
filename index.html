@@ -1,0 +1,335 @@
+<!DocType html>
+<html lang="en">
+	<head>
+		<title>In & Out Moving</title>
+		<meta charset=utf-8>
+		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+		<meta name="description" content="In and Out Moving Company in Toronto" />
+        <meta name="keywords" content="moving, apartment, condo, office, house, company, toronto"/>
+	<!--font-->
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css' >
+		<link href='http://fonts.googleapis.com/css?family=verdana' rel='stylesheet' type='text/css' >
+		<link href='http://fonts.googleapis.com/css?family=Terminal+Dosis+Light' rel='stylesheet' type='text/css'>
+        
+	<!--css-->
+		<link href="css/style.css" rel="stylesheet" type="text/css"/><!--Main-->	
+        <link href="css/demo.css" rel="stylesheet" type="text/css"/>
+		<link href="css/js-image-slider.css" rel="stylesheet" type="text/css"/><!--slider-->
+		<link href="css/component.css" rel="stylesheet" type="text/css"/><!--Main Menu-->
+		<link href="css/base/jquery.ui.all.css" rel="stylesheet" type="text/css"/><!--Date Picker-->
+		<link href='css/fullcalendar.css' rel='stylesheet' />
+	
+	<!--script-->
+		<script src="js/jquery-1.9.1.js"></script><!--Library-->
+		<script src="js/ui/jquery.ui.core.js"></script><!--Library-->
+		<script src="js/ui/jquery.ui.datepicker.js"></script><!--Library-->
+		<!--Calendar-->
+		<script src='js/calendar/jquery-ui.custom.min.js'></script>
+		<script src='js/calendar/fullcalendar.min.js'></script>
+		<script src='js/calendar/canada-holiday-in2014.js'>	</script>
+		<!--date picker-->
+		<script src="jquery.js">
+			$(function() {
+				$( ".datepicker" ).datepicker();
+			});
+		</script>
+		<script>
+			$(document).ready(function() {
+			    $('#include_menu').load('header.html');
+			});
+			$(document).ready(function() {
+			    $('#include_footer').load('footer.html');
+			});
+			$(document).ready(function() {
+			    $('#include_quickie_quote').load('quickie_quote.php');
+			});
+		</script>
+		<!--Map-->
+		<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyC3iFuplIPFhd6rhjB620pK7Ywuu5wysQI&sensor=true"></script>
+		<script src='js/google-map/custom-map.js'></script>
+		<!--yelp-->
+		<script>(function() { var s = document.createElement("script");s.async = true;s.onload = s.onreadystatechange = function(){getYelpWidget("in-and-out-movers-toronto","228","RED","n","y","1");};s.src='http://chrisawren.com/widgets/yelp/yelpv2.js' ;var x = document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);})();
+		</script>
+	</head>
+	<body>
+		<!-- top menu-->
+		<div id="include_menu" ></div>
+		
+		<div class="container">
+			<div class=quicklinks>
+				<ul>
+					<!--<img src="images/background/quick-link.png" alt=""/>-->
+					<li><h2>Quick Links</h2></li>
+					<li><a href="innout-booking-step1.php"><h4>Booking to move</h4></a></li>
+					<li><a href="#"><h4>In n Out Booking Summary</h4></a></li>
+					<li><a href="innout-movingtip.html"><h4>Moving tips</h4></a></li>
+					<li><a href="#"><h4>Contact us</h4></a></li>
+					<li><a href="innout-location.html"><h4>Our location</h4></a></li>
+				</ul>
+			</div>
+			<!--Column 1 in Row 1-->
+			<div class="column-1_2">
+				<div id="sliderFrame">
+					<div id="slider">
+						<a href="#" target="_blank">
+							<img src="images/slider/Winter-Moving-Sale-Full-Home-Movers.jpg" alt="" />
+						</a>
+						<a class="lazyImage" href="images/slider/bestest-movers-toronto.jpg" title=""></a>
+						<a class="lazyImage" href="images/slider/in-and-out-Condo.jpg" title=""></a>						
+						<a class="lazyImage" href="images/slider/eco-moving-boxes.jpg" title=""></a>
+						<a class="lazyImage" href="images/slider/Movers-Best-Service.jpg" title=""></a>
+					</div>
+					<!--thumbnails-->
+					<div id="thumbs">
+						<div class="thumb">
+							<!--<div class="frame"><img src="images/thumb1.jpg" /></div>-->
+							<div class="thumb-content">
+								<a cursor="pointer" href="#"><p>Winter Sale</p>Moving Sale for Full House on Winter.</a>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="thumb">
+							<!--<div class="frame"><img src="images/thumb2.jpg" /></div>-->
+							<div class="thumb-content">
+								<a cursor="pointer" href="#"><p>Best Movers</p>Great Customer Service.</a>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="thumb">
+							<!--<div class="frame"><img src="images/thumb3.jpg" /></div>-->
+							<div class="thumb-content">
+								<a cursor="pointer" href="#"><p>1 Bedroom Condo</p>Tax included <br/>price!</a>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="thumb">
+							<!--<div class="frame"><img src="images/thumb4.jpg" /></div>-->
+							<div class="thumb-content">
+								<a cursor="pointer" href="#"><p>Eco Boxes</p>Rental Eco Boxes, Save Money.</a>
+								</div>
+							<div class="clear"></div>
+						</div>
+						<div class="thumb">
+							<!--<div class="frame"><img src="images/thumb4.jpg" /></div>-->
+							<div class="thumb-content">
+								<a cursor="pointer" href="#"><p>Service Areas</p>Great Toronto Area and neighbours.</a>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<!--clear above float:left elements. It is required if above #slider is styled as float:left. -->
+					<div class="clear" style="height:0;"></div>
+				</div>
+			</div>
+			<!--Column 2 in Row 1-->
+			<div class="column-2_2">
+				<!--Side Support blocks-->
+				<div class="support_block" >
+					
+					<!--<h2></h2>
+					<article>
+						<p>&nbsp;</p>
+						
+						<a href="#">
+							<span class="readmore"><img src="images/icons/read-arrow.png" alt=">>" class="readarrow"/></span>
+						</a>
+					</article>
+				</div>
+				<div class="support_block">
+					<h2></h2>
+					<article>
+						<p>&nbsp;</p>
+						<a href="#">
+							<span class="readmore"><img src="images/icons/read-arrow.png" alt=">>" class="readarrow"/></span>
+						</a>
+					</article>-->
+				</div>
+			</div>	<div class="clear"></div>
+			<!-- Column1 in Row 2-->
+			<div class="blocks">
+				<div class="block">
+					<div class="block-top">
+						<h6 align="center">Recent Jobs</h6>
+						<div>
+							<h4>1 + Den Condo<span class="pink-font"> 4.5 hours</span></h4>
+							<p>Liberty Village to Harbourfront</p>
+							<a href="#">
+								<span class="readmore"><img src="images/icons/read-arrow.png" alt=">>" class="readarrow"/></span>
+							</a>
+							<div class="clear"></div>
+							<h4>Full House<span class="pink-font"> 9 hours</span></h4>
+							<p>Leslieville to Beaches</p>
+							<a href="#">
+								<span class="readmore"><img src="images/icons/read-arrow.png" alt=">>" class="readarrow"/></span>
+							</a>
+							<div class="clear"></div>
+							<h4>Sofa Delivery<span class="pink-font"> Flat Rate</span></h4>
+							<p>Leslieville to Beaches</p>
+							<a href="#">
+								<span class="readmore"><img src="images/icons/read-arrow.png" alt=">>" class="readarrow"/></span>
+							</a>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="bottom-img"><img src="images/background(160x80)/innout-truck(black).gif" alt="Moving truck"/></div>
+				</div>
+				<div class="space"></div>
+				<div class="block">
+					<div class="block-top">
+						<h6 align="center">Move Kits</h6>
+						<div>
+							<h4>1 Bedroom Box set <span class="pink-font"> $95</span></h4>
+							<p>25 Medium sized Boxes</p>
+							<p>15 Large sized Boxes</p>
+							<p>2 Wardrobe Boxes</p>
+							<a href="#">
+								<span class="readmore"><img src="images/icons/read-arrow.png" alt=">>" class="readarrow"/></span>
+							</a>
+							<div class="clear"></div>
+						</div>
+						<div>
+							<h4>2 Bedroom Box set <span class="pink-font"> $120</span></h4>
+							<p>35 Medium sized Boxes</p>
+							<p>20 Large sized Boxes</p>
+							<p>3 Wardrobe Boxes</p>
+							<a href="#">
+								<span class="readmore"><img src="images/icons/read-arrow.png" alt=">>" class="readarrow"/></span>
+							</a>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="bottom-img"><img src="images/background(160x80)/innout-boxes.png" alt="Moving Boxes"/></div>
+				</div>
+				<div class="space"></div>
+				<div class="block">
+					<div class="block-top">
+					<h6 align="center">Moving Tips</h6>
+						<div>
+							<h4>DIY: <span class="pink-font"> 9&#189; secrets to packing a good box.</span></h4>
+							<a href="#">
+								<span class="readmore"><img src="images/icons/read-arrow.png" alt=">>" class="readarrow"/></span>
+							</a>
+							<div class="clear"></div>
+						</div>
+						<div>
+							<h4>ZEN: <span class="pink-fon"t> Best doation centers in Toronto.</span></h4>
+							<a href="#">
+								<span class="readmore"><img src="images/icons/read-arrow.png" alt=">>" class="readarrow"/></span>
+							</a>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="bottom-img"><img src="images/background(160x80)/2-movers.gif" alt="In&Out Logo"/></div>
+				</div>
+				<div class="space"></div>
+				<div class="block">
+					<h6 align="center">Deal Date</h6>
+					<div id='calendar'></div>
+				</div>
+			</div>	<div class="clear"></div>
+			<!-- Column1 in Row 3-->
+			<div class="blocks last">
+				<div class="block">
+					<a href="innout-location.html"><div id="map-canvas"></div></a>
+				</div>
+				<div class="space"></div>
+				<div class="block">
+					<div class="block-top">
+						<h6 align="center">Moving Equipments</h6>
+						<div>
+							<h4>Moving Boxes<span class="pink-font"></span></h4>
+							<p>Eco Boxes</p>
+							<p>Regular Boxes</p>
+							<p>Wardrobe Boxes</p>
+							<p>Special Boxes</p>
+							<a href="#">
+								<span class="readmore"><img src="images/icons/read-arrow.png" alt=">>" class="readarrow"/></span>
+							</a>
+							<div class="clear"></div>
+						</div>
+						<div>
+							<h4>Protective supplies<span class="pink-font"></span></h4>
+							<p>Wrap rolls</p>
+							<p>Floor pads</p>
+							<p>Furniture pads</p>
+							<a href="#">
+								<span class="readmore"><img src="images/icons/read-arrow.png" alt=">>" class="readarrow"/></span>
+							</a>
+							<div class="clear"></div>
+						</div>
+						<div>
+							<h4>Tools<span class="pink-font"></span></h4>
+							<p>Dollies</p>
+							<p>Tools</p>
+							<p></p>
+							<a href="#">
+								<span class="readmore"><img src="images/icons/read-arrow.png" alt=">>" class="readarrow"/></span>
+							</a>
+							<div class="clear"></div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="space"></div>
+				<div class="block">
+					<div class="block-top">
+					<h6 align="center">FAQ</h6>
+						<div>
+							<h4>'Dock To Dock' system <span class="pink-font"></span></h4>
+							<a href="innout-faq.html">
+								<span class="readmore"><img src="images/icons/read-arrow.png" alt=">>" class="readarrow"/></span>
+							</a>
+							<div class="clear"></div>
+						</div>
+						<div>
+							<h4>Before when can I book?<span class="pink-font"></span></h4>
+							<a href="innout-faq.html">
+								<span class="readmore"><img src="images/icons/read-arrow.png" alt=">>" class="readarrow"/></span>
+							</a>
+							<div class="clear"></div>
+						</div>
+						<div>
+							<h4>How far can you travel?<span class=pink-font></span></h4>
+							<a href="innout-faq.html	">
+								<span class=readmore><img src="images/icons/read-arrow.png" alt=">>" class=readarrow/></span>
+							</a>
+							<div class=clear></div>
+						</div>
+						<div>
+							<h4>How long will our move take?<span class="pink-font"></span></h4>
+							<a href="innout-faq.html">
+								<span class="readmore"><img src="images/icons/read-arrow.png" alt=">>" class="readarrow"/></span>
+							</a>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="bottom-img"><img src="images/background(160x80)/Innout.jpg" alt="In&Out Logo"/></div>
+				</div>
+				<div class="space"></div>	
+				<div class="block">
+					<div id='yelpwidget'></div>
+					<!--<h6 align="center"></h6>
+					<div style="margin-top:80px;">
+						<a href="#" class="calander"><img src="images/background/Diversity-in-labour.png" alt="I Move To" /></a>
+					</div>-->
+				</div>
+			</div>
+		</div>
+		<div class=clear></div>
+		<P style="margin:30px;">&nbsp;</p>
+
+		<!--quickie_quote-->
+		<!--<div id="include_quickie_quote" ></div>-->
+		<!--footer-->
+		<div id="include_footer" ></div>
+		
+		<!-- The JavaScript -->
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
+
+		<!-- the mousewheel plugin - optional to provide mousewheel support-->
+		<script src="js/jquery.mousewheel.js" type="text/javascript"></script> 
+		
+		<!--Gallery-->
+		<script src="js/images-slider/custom-slider.js" type="text/javascript"></script>
+	</body>
+</html>
