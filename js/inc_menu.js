@@ -1,3 +1,0 @@
-function inc_menu() {
-
-}
